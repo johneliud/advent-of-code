@@ -23,7 +23,7 @@ func FetchInput(year, day string) string {
 
 	session := os.Getenv("AOC_SESSION_COOKIE")
 	if len(session) == 0 {
-		fmt.Println("Environment varibale not set.")
+		fmt.Println("Environment varible not set.")
 		return ""
 	}
 
