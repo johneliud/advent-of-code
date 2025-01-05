@@ -17,7 +17,7 @@ func main() {
 		return
 	}
 
-	input := utils.ReadInput("2015", "2")
+	input := utils.FetchInput("2015", "2")
 
 	fmt.Println("Square feet of wrapping paper:", determineSquareFeetOfWrappingPaper(input))
 	fmt.Println("Feet of ribbon:", determineFeetOfRibbon(input))

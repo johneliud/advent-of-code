@@ -9,8 +9,8 @@ import (
 
 const baseURL = "https://adventofcode.com/%s/day/%s/input"
 
-// ReadInput accepts year and day as parameters in order to fetch the puzzle input from the specified URL. 
-func ReadInput(year, day string) string {
+// FetchInput accepts year and day as parameters in order to fetch the puzzle input from the specified URL.
+func FetchInput(year, day string) string {
 	url := fmt.Sprintf(baseURL, year, day)
 
 	client := http.Client{}

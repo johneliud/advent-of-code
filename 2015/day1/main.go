@@ -17,7 +17,7 @@ func main() {
 		return
 	}
 
-	input := utils.ReadInput("2015", "1")
+	input := utils.FetchInput("2015", "1")
 
 	fmt.Println("Floor:", findFloor(input))
 	fmt.Println("Position:", findPosition(input))
