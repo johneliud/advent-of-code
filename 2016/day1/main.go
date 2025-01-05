@@ -29,7 +29,7 @@ func main() {
 	year := splitWd[len(splitWd)-2]
 	day := splitWd[len(splitWd)-1][3:]
 
-	input := utils.ReadInput(year, day)
+	input := utils.FetchInput(year, day)
 
 	fmt.Println("Blocks distance:", determineBlocksDistance(input))
 
