@@ -21,7 +21,13 @@ func FetchInput(year, day string) string {
 		return ""
 	}
 
-	req.Header.Add("Cookie", "session="+os.Getenv("AOC_SESSION_COOKIE"))
+	session := os.Getenv("AOC_SESSION_COOKIE")
+	if len(session) == 0 {
+		fmt.Println("Environment varibale not set.")
+		return ""
+	}
+
+	req.Header.Add("Cookie", "session="+session)
 
 	res, err := client.Do(req)
 	if err != nil {
