@@ -19,8 +19,8 @@ func main() {
 
 	input := utils.FetchInput("2015", "2")
 
-	fmt.Println("Square feet of wrapping paper:", determineSquareFeetOfWrappingPaper(input))
-	fmt.Println("Feet of ribbon:", determineFeetOfRibbon(input))
+	fmt.Println("Wrapping Paper:", determineSquareFeetOfWrappingPaper(input))
+	fmt.Println("Ribbon:", determineFeetOfRibbon(input))
 
 	elapsed := time.Since(start)
 	fmt.Println("\nTime taken:", elapsed)
