@@ -30,6 +30,11 @@ func FetchInput(year, day string) string {
 	}
 	defer res.Body.Close()
 
+	if res.StatusCode != http.StatusOK {
+		fmt.Printf("Unexpected status code: %d\n", res.StatusCode)
+		return ""
+	}
+
 	body, err := io.ReadAll(res.Body)
 	if err != nil {
 		fmt.Printf("Failed reading response body: %v\n", err)
