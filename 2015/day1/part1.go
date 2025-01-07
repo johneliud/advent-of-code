@@ -8,8 +8,6 @@ func findFloor(s string) int {
 			floor++
 		} else if char == ')' {
 			floor--
-		} else {
-			continue
 		}
 	}
 	return floor
