@@ -1,4 +1,4 @@
-package main
+package day1
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func determineBlocksDistance(input string) int {
+func DetermineBlocksDistance(input string) int {
 	var xPos, yPos, currentDirection int
 	directions := []string{"N", "E", "S", "W"}
 
