@@ -1,6 +1,6 @@
-package main
+package day1
 
-func findPosition(s string) int {
+func FindPosition(s string) int {
 	var floor, position int
 
 	for i, char := range s {

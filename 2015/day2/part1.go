@@ -1,4 +1,4 @@
-package main
+package day2
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func determineSquareFeetOfWrappingPaper(input string) int {
+func DetermineSquareFeetOfWrappingPaper(input string) int {
 	splitInput := strings.Split(input, "\n")
 
 	var smallestArea, surfaceArea int

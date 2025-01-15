@@ -1,4 +1,4 @@
-package main
+package day2
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func determineFeetOfRibbon(input string) int {
+func DetermineFeetOfRibbon(input string) int {
 	splitInput := strings.Split(input, "\n")
 
 	var smallestPerimeter, volume int

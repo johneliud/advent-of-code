@@ -1,6 +1,6 @@
-package main
+package day1
 
-func findFloor(s string) int {
+func FindFloor(s string) int {
 	var floor int
 
 	for _, char := range s {
