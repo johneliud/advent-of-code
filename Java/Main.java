@@ -20,7 +20,7 @@ public class Main {
 
             System.out.println("Floor: " + floor);
         } else {
-            System.out.println("Could not fetch Advent data for year " + year + ", day " + day + ".");
+            System.out.println("Could not fetch advent data for year " + year + ", day " + day + ".");
         }
     }
 }
