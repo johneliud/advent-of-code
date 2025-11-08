@@ -1,5 +1,6 @@
 import utils.FetchAdventData;
 import _2015.day_one.PartOne;
+import _2015.day_one.PartTwo;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,8 +18,10 @@ public class Main {
             System.out.println("Advent of code data fetched successfully.\n\n");
 
             int floor = PartOne.findFloor(adventData);
+            int position = PartTwo.findPosition(adventData);
 
             System.out.println("Floor: " + floor);
+            System.out.println("Position: " + position);
         } else {
             System.out.println("Could not fetch advent data for year " + year + ", day " + day + ".");
         }
