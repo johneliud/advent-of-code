@@ -9,6 +9,8 @@ public class PartOne {
                 floor++;
             } else if (c == ')') {
                 floor--;
+            } else {
+                continue;
             }
         }
         return floor;
